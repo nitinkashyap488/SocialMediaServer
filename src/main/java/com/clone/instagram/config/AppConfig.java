@@ -42,7 +42,8 @@ public class AppConfig {
 			public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
 				CorsConfiguration configuration = new CorsConfiguration();
 				configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000", "http://localhost:4000",
-						"https://socialmediafeed.vercel.app"));
+						"https://socialmediafeed.vercel.app",
+						"https://socialmediafeed.vercel.app/socialmediaserver-production-5852.up.railway.app"));
 				configuration.setAllowedMethods(Collections.singletonList("*"));
 				configuration.setAllowCredentials(true);
 				configuration.setAllowedHeaders(Collections.singletonList("*"));
